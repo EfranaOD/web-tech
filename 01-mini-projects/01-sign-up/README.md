@@ -26,12 +26,10 @@ It demonstrates form validation, accessibility, and basic JS interactivity.
 
 ## Folder Structure
 
-SignUpForm/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+01-sign-up/
+    ├── index.html
+    ├── style.css
+    └── script.js
 
 ---
 
@@ -46,5 +44,6 @@ SignUpForm/
 ## Author
 
 **Efrana**  
-Aspiring .NET Full Stack Developer.
-Mentorship & guidance: ChatGPT (OpenAI).
+Aspiring .NET Full Stack Developer.  
+  
+Learning with guidance and mentorship along the way.
