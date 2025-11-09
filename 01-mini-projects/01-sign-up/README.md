@@ -46,5 +46,5 @@ SignUpForm/
 ## Author
 
 **Efrana**  
-Aspiring .NET Full Stack Developer
-Mentorship & guidance: ChatGPT (OpenAI)
+Aspiring .NET Full Stack Developer.
+Mentorship & guidance: ChatGPT (OpenAI).
