@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="../../shared/default-theme.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<section class="signup-form">
+  <h1>Sign Up</h1>
+
+  <form id="signupForm" action="" method="post" autocomplete="on">
+    
+    <label for="name">Full Name:</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      placeholder="Full Name" 
+      required 
+      autocomplete="name">
+
+    <label for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="Email Address" 
+      required 
+      autocomplete="email">
+
+    <label for="password">Password:</label>
+    <input 
+      type="password" 
+      id="password" 
+      name="password" 
+      placeholder="Password" 
+      required 
+      autocomplete="new-password">
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input 
+      type="password" 
+      id="confirmPassword" 
+      name="confirmPassword" 
+      placeholder="Confirm Password" 
+      required 
+      autocomplete="new-password">
+
+    <fieldset>
+      <legend>Gender:</legend>
+
+      <input type="radio" name="gender" value="male" id="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" value="female" id="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" value="others" id="others">
+      <label for="others">Others</label>
+    </fieldset>
+
+    <label for="dob">Date of Birth:</label>
+    <input 
+      type="date" 
+      name="dob" 
+      id="dob" 
+      required 
+      autocomplete="bday">
+
+    <label for="country">Country:</label>
+    <select name="country" id="country" required autocomplete="country-name">
+      <option value="">--Select Country--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">United Kingdom</option>
+      <option value="swiss">Switzerland</option>
+      <option value="japan">Japan</option>
+    </select>
+
+    <div class="agreement">
+      <input type="checkbox" name="agreement" id="agreement" required>
+      <label for="agreement">I agree to the Terms and Conditions</label>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+</section>
+
+<div id="successMessage" class="success-message" hidden>
+  ✅ You have signed up successfully!
+</div>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
