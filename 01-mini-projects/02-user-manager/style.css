@@ -1,0 +1,168 @@
+/* Global reset-ish */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Page background & centering */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #111827; /* dark-ish */
+  color: #e5e7eb;      /* light gray text */
+}
+
+/* Main form container */
+form#formTwo {
+  margin-top: 40px;
+  background: #1f2937;       /* card background */
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Section titles (we’ll style based on id) */
+section {
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Add a title look using :before (no extra HTML needed) */
+#add-user::before,
+#search-results::before,
+#delete-user::before,
+#edit-user::before {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+/* Different titles per section */
+#add-user::before {
+  content: "Add & List Users";
+}
+#search-results::before {
+  content: "Search, Filter & Summary";
+}
+#delete-user::before {
+  content: "Delete User";
+}
+#edit-user::before {
+  content: "Edit User";
+}
+
+/* Labels & inputs inline for add-user */
+#add-user label {
+  margin-right: 8px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  padding: 6px 8px;
+  margin: 4px 0;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #60a5fa;
+}
+
+/* Submit input styled like button */
+input[type="submit"] {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #f9fafb;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-right: 6px;
+  border-radius: 6px;
+  border: none;
+  background: #374151;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background: #4b5563;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Arrange controls inside sections */
+#add-user,
+#search-results,
+#delete-user,
+#edit-user {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Group some items in search / delete / edit */
+#search-results input,
+#delete-user input,
+#edit-user input {
+  max-width: 260px;
+}
+
+/* Paragraph outputs (results / messages) */
+p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+/* Make main result blocks stand out slightly */
+#resultParaTwo,
+#searchResult,
+#resultAdultsFilter,
+#resultOfSummary,
+#resultDeleteBtn,
+#editUserResult,
+#saveEditedResult {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #111827;
+  min-height: 18px; /* keeps space even when empty */
+}
+
+/* Optional: make messages feel like info / status */
+#msgParaTwo {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #fbbf24; /* amber-ish info text */
+}

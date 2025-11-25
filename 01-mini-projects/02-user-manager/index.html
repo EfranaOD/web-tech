@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Users Manager</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="formTwo">
+      <section id="add-user">
+        <label for="nameInputTwo">Name: </label>
+        <input type="text" id="nameInputTwo">
+
+        <label for="userAge">Age: </label>
+        <input type="number" id="userAge">
+
+        <input type="submit">
+        <p id="msgParaTwo"></p>
+
+        <button id="usersDetails" type="button">List</button>
+        <button id="clearUsers" type="button">Clear</button>
+        <p id="resultParaTwo"></p>
+      </section>
+
+      <section id="search-results">
+        <input type="text" id="searchBar">
+        <button id="search" for="searchBar" type="button">Search</button>
+        <p id="searchResult"></p>
+
+        <button id="adultsOnlyFilter" type="button">Adults only filter</button>
+        <p id="resultAdultsFilter"></p>
+
+        <button id="summaryOfUsers" type="button">Summary</button>
+        <p id="resultOfSummary"></p>
+      </section>
+
+      <section id="delete-user">
+        <input type="text" id="searchDelete">
+        <button id="deleteButton" for="searchDelete" type="button">Delete</button>
+        <p id="resultDeleteBtn"></p>
+      </section>
+
+      <section id="edit-user">
+        <input type="text" id="findUserToEdit" placeholder="user you want to edit">
+        <button id="editUserButton" type="button">Edit</button>
+        <p id="editUserResult"></p>
+        <input type="text" id="newUserName" placeholder="enter name to update">
+        <input type="text" id="newUserAge" placeholder="enter age to update">
+        <button id="saveEditedUser" type="button">Save</button>
+        <p id="saveEditedResult"></p>
+      </section>
+
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
