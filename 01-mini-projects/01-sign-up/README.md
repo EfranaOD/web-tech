@@ -27,9 +27,9 @@ It demonstrates form validation, accessibility, and basic JS interactivity.
 ## Folder Structure
 
 01-sign-up/
-    ├── index.html
-    ├── style.css
-    └── script.js
+- index.html
+- style.css
+- script.js
 
 ---
 
