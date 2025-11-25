@@ -28,7 +28,6 @@ A minimal user-management page built with plain HTML, CSS, and JavaScript.
 
 ## Folder Structure
 
-```text
 02-user-manager/
   ├── index.html
   ├── style.css
