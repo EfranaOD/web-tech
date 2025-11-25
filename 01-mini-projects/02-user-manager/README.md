@@ -2,6 +2,8 @@
 
 A minimal user-management page built with plain HTML, CSS, and JavaScript.
 
+---
+
 ## Features
 
 - Add user (name + age). Validation: name required, min length 3.
@@ -15,6 +17,8 @@ A minimal user-management page built with plain HTML, CSS, and JavaScript.
 - Delete user by name (case-insensitive).
 - Edit user (prefill fields; update name and/or age; “Nothing to edit” message if unchanged).
 
+---
+
 ## Tech / Skills
 
 - HTML (forms, inputs)
@@ -26,6 +30,8 @@ A minimal user-management page built with plain HTML, CSS, and JavaScript.
   - Simple UI state (enable/disable)
   - Updating DOM with `innerText` / `innerHTML`
 
+---
+
 ## Folder Structure
 
 02-user-manager/
@@ -33,10 +39,19 @@ A minimal user-management page built with plain HTML, CSS, and JavaScript.
 - style.css
 - script.js
 
+---
+
 ## How to Run
 
 1. Open `index.html` in a browser.
 2. Add users and try the different actions (list, search, filter, delete, edit).
+
+---
+
+**Note:**  
+The CSS was borrowed from a template to speed up UI setup. All core logic and functionality were implemented by me.
+
+---
 
 ## Author
 

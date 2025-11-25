@@ -18,8 +18,7 @@ It demonstrates form validation, accessibility, and basic JS interactivity.
 
 ## Tech Stack
 
-- HTML5  
-- CSS3  
+- HTML5    
 - JavaScript (ES6)
 
 ---
@@ -28,7 +27,7 @@ It demonstrates form validation, accessibility, and basic JS interactivity.
 
 01-sign-up/
 - index.html
-- style.css
+- style.css(was a template used from 
 - script.js
 
 ---
@@ -38,6 +37,11 @@ It demonstrates form validation, accessibility, and basic JS interactivity.
 1. Open `index.html` in a browser.  
 2. Fill in all required fields.  
 3. Submit to see the success message.
+
+---
+
+**Note:**  
+The CSS was borrowed from a template to speed up UI setup. All core logic and functionality were implemented by me.
 
 ---
 
