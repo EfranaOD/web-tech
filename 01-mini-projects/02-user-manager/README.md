@@ -1,90 +1,47 @@
-\# User Manager (Vanilla JS)
-
-
+# User Manager (Vanilla JS)
 
 A minimal user-management page built with plain HTML, CSS, and JavaScript.
 
+## Features
 
+- Add user (name + age). Validation: name required, min length 3.
+- Mark user as adult/minor (age ≥ 18).
+- List all users.
+- **Clear**: remove all users (reset state).
+- Live search (substring, case-insensitive).
+- Exact search (button).
+- Filter adults only.
+- Summary: total users / adults / minors.
+- Delete user by name (case-insensitive).
+- Edit user (prefill fields; update name and/or age; “Nothing to edit” message if unchanged).
 
-\## Features
+## Tech / Skills
 
-\- Add user (name + age). Validation: name required, min length 3.
+- HTML (forms, inputs)
+- CSS (basic layout)
+- JavaScript (vanilla):
+  - DOM selection & events
+  - Form handling & validation
+  - Arrays of objects: `push`, `find`, `findIndex`, `filter`, `forEach`
+  - Simple UI state (enable/disable)
+  - Updating DOM with `innerText` / `innerHTML`
 
-\- Mark user as adult/minor (age ≥ 18).
+## Folder Structure
 
-\- List all users.
-
-\- \*\*Clear\*\*: remove all users (reset state).
-
-\- Live search (substring, case-insensitive).
-
-\- Exact search (button).
-
-\- Filter adults only.
-
-\- Summary: total users / adults / minors.
-
-\- Delete user by name (case-insensitive).
-
-\- Edit user (prefill fields; update name and/or age; no-op message if nothing changed).
-
-
-
-\## Tech / Skills
-
-\- HTML (forms, inputs)
-
-\- CSS (basic layout)
-
-\- JavaScript (vanilla): DOM selection \& events, form handling, array methods (`push`, `find`, `findIndex`, `filter`, `forEach`), simple UI state (enable/disable), updating DOM.
-
-
-
-\## Folder Structure
-
-
-
+```text
 02-user-manager/
+  ├── index.html
+  ├── style.css
+  └── script.js
 
-&nbsp;   ├── index.html
+## How to Run
 
-&nbsp;   ├── style.css
+1. Open `index.html` in a browser.
+2. Add users and try the different actions (list, search, filter, delete, edit).
 
-&nbsp;   └── script.js
+## Author
 
-
-
----
-
-
-
-\## How to Run
-
-
-
-1\. Open `index.html` in a browser.  
-
-2\. Fill in all required fields.  
-
-3\. Submit to see the success message.
-
-
-
----
-
-
-
-\## Author
-
-
-
-\*\*Efrana\*\*  
-
-Aspiring .NET Full Stack Developer.  
-
-&nbsp; 
+**Efrana**  
+Aspiring .NET Full Stack Developer.
 
 Learning with guidance and mentorship along the way.
-
-
-
